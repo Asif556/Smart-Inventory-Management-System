@@ -1,27 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.Footer{
+
+.Footer {
     display: flex;   
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background-color:rgb(244,98,58);
+    background-color: rgb(244, 98, 58);
     gap: 3rem;
     padding-left: 20rem;
     padding-right: 20rem;
-   
 }
-.text{
-    color: black;
+
+.text {
+    color: black; 
 } 
-.help{
+
+.help {
     color: white;
     font-weight: 500;
 }
-.mail{
+
+.mail {
     color: black;
+}
+
+@media (max-width: 768px) {
+    .Footer {
+        height: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        gap: 1.5rem;
+    }
+
+    .text, .mail {
+        font-size: 0.9rem;
+    }
+
+    .help {
+        font-size: 1rem;
+    }
 }
