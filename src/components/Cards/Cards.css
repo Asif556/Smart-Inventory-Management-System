@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Langar');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.card{
+
+.card {
     height: 9rem;
     width: 12rem;
     display: flex;
@@ -13,24 +15,22 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4); 
     color: #000;
-     border: 1px solid #ccc;
+    border: 1px solid #ccc;
     color: white;
     border-radius: 1rem;
-    border-color: rgb(86, 127,164);
+    border-color: rgb(86, 127, 164);
     transition: all 0.4s;
     animation: cardchange 1.5s ease-in-out;
-    font-family:'Langar', cursive;
+    font-family: 'Langar', cursive;
     font-size: 1.1rem;
     animation: shadowAnimation 2s linear infinite;
-    
 }
-.card:hover{
+
+.card:hover {
     cursor: pointer;
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     color: rgb(86, 127, 164);
-    
-    
 }
 
 @keyframes shadowAnimation {
@@ -56,20 +56,31 @@
     }
 }
 
-
 @keyframes cardchange {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
-    
 }
 
-.cardsection{
+.cardsection {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:2rem;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: 7rem;
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+    .cardsection {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
