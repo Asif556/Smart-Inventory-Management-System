@@ -1,45 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Langar');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     overflow-x: hidden; 
 }
-.main{
+
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100vh ;
+    height: 100vh;
     width: 100vw;
 }
-.write{
-    
+
+.write {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding: 0 15rem;
     margin-bottom: 8rem;
     margin-top: 3rem;
 }
-.Name{
+
+.Name {
     margin-bottom: 2rem;
     color: rgb(84,126,164);
     text-shadow: 2px 2px black;
 }
-.para{
+
+.para {
     font-size: 1.3rem;
     color: white;
     font-weight: 400;
-    
     font-family: 'Langar', cursive;
     text-shadow: 2px 2px black;
 }
-.explore{
+
+.explore {
     height: 3.3rem;
     width: 10.2rem;
     margin-top: 4rem;
@@ -49,12 +53,48 @@ body {
     background-color: rgb(84,126,164);
     border-radius: 1.2rem;
     border-style: none;
-    
     transition: all 0.4s;
 }
-.explore:hover{
+
+.explore:hover {
     cursor: pointer;
     color: black;
     background-color: rgb(244,98,58);
     box-shadow: 15px 5px 5px black;
+}
+
+@media (max-width: 768px) {
+    .write {
+        padding: 0 2rem;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+    
+    .Name {
+        font-size: 2rem;
+    }
+
+    .para {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .explore {
+        width: 8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Name {
+        font-size: 1.8rem;
+    }
+
+    .para {
+        font-size: 1rem;
+    }
+
+    .explore {
+        width: 7rem;
+        font-size: 1rem;
+    }
 }
