@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Langar');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.About{
-    background-color:rgb(244,98,58);
+.About {
+    background-color: rgb(244, 98, 58);
     height: 215vh;
     width: 100vw;
     display: flex;
@@ -16,32 +17,36 @@
     padding-right: 20rem;
     gap: 5rem;
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4rem;
 }
-h2{
+
+h2 {
     font-size: 2.1rem;
     color: white;
     text-align: center;
     font-weight: 700;
 }
-.first{
+
+.first {
     margin-top: 7rem;
 }
-p{
+
+p {
     font-size: 1.1rem;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     color: white;
     word-spacing: 10px;
 }
 
-.get{
+.get {
     height: 3.5rem;
     width: 12rem;
     border-style: none;
@@ -52,9 +57,34 @@ p{
     background: white;
     color: black;
 }
-.get:hover{
+
+.get:hover {
     cursor: pointer;
     color: black;
-    background-color: rgb(244,98,58);
+    background-color: rgb(244, 98, 58);
     box-shadow: 15px 5px 5px black;
+}
+
+@media (max-width: 768px) {
+    .About {
+        height: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        gap: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        word-spacing: 5px;
+    }
+
+    .get {
+        width: 80%;
+        height: 3rem;
+        font-size: 1rem;
+    }
 }
