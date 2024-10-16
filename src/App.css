@@ -12,6 +12,6 @@
   font-family: Arial, sans-serif;
   width: 100vw;
   
-  background-image: url(.\\public\\bg-image.png);
+  background-image: url(/bg-image.png);
 }
 
