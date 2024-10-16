@@ -66,6 +66,7 @@
 .logo {
     margin-left: 2rem;
     transition: all 0.4s;
+    color: white;
 }
 
 .logo:hover {
