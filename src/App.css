@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Main{
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-position: center; 
+  font-family: Arial, sans-serif;
+  width: 100vw;
+  
+  background-image: url(.\\public\\bg-image.png);
+}
+

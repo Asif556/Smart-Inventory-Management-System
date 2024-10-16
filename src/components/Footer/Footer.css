@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Footer{
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color:rgb(244,98,58);
+    gap: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+   
+}
+.text{
+    color: black;
+} 
+.help{
+    color: white;
+    font-weight: 500;
+}
+.mail{
+    color: black;
+}

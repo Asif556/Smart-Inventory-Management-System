@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Langar');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    height: 9rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: #000;
+     border: 1px solid #ccc;
+    color: white;
+    border-radius: 1rem;
+    border-color: rgb(86, 127,164);
+    transition: all 0.4s;
+    animation: cardchange 1.5s ease-in-out;
+    font-family:'Langar', cursive;
+    font-size: 1.1rem;
+    animation: shadowAnimation 2s linear infinite;
+    
+}
+.card:hover{
+    cursor: pointer;
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: rgb(86, 127, 164);
+    
+    
+}
+
+@keyframes shadowAnimation {
+    0% {
+        border-color: rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 transparent;
+    }
+    25% {
+        border-color: rgba(86, 127, 164, 0.7);
+        box-shadow: 5px 5px 10px rgba(86, 127, 164, 0.8);
+    }
+    50% {
+        border-color: rgba(86, 127, 164, 0.7);
+        box-shadow: 0 0 0 transparent;
+    }
+    75% {
+        border-color: rgba(86, 127, 164, 0.7);
+        box-shadow: -5px -5px 10px rgba(86, 127, 164, 0.8);
+    }
+    100% {
+        border-color: rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 transparent;
+    }
+}
+
+
+@keyframes cardchange {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.cardsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
