@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.mainbody{
+
+.mainbody {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,21 +12,40 @@
     width: 100vw;
     height: 100vh;
 }
-.text{
+
+.text {
     width: 50vw;
     margin-top: 1rem;
-
 }
-.cards{
+
+.cards {
     margin-left: 5rem;
     margin-top: 3rem;
 }
-.key{
-    h2{
-    color: white;
+
+.key {
+    h2 {
+        color: white;
     }
     text-shadow: 2px 2px black;
     margin-bottom: 1rem;
-    
 }
 
+@media (max-width: 768px) {
+    .text {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .cards {
+        margin-left: 0;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .key h2 {
+        font-size: 1.5rem;
+    }
+}
