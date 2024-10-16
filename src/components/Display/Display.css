@@ -1,35 +1,34 @@
-
-body{
+body {
     background-image: url(/bg-image.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
+
 .App {
     text-align: center;
     margin: 20px;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     animation: bounceIn 1s ease-in-out;
-  }
-  
-  select {
+}
+
+select {
     margin: 10px;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ddd;
     background-color: #fff;
     transition: box-shadow 0.3s ease-in-out;
-  }
-  
-  select:hover {
+}
+
+select:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .display-button {
+}
+
+.display-button {
     padding: 12px 20px;
     margin: 15px;
     background-color: #28b32c;
@@ -39,14 +38,14 @@ body{
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s;
     animation: pulse 1.5s infinite;
-  }
-  
-  .display-button:hover {
+}
+
+.display-button:hover {
     background-color: #29782d;
     transform: scale(1.00);
-  }
-  
-  table {
+}
+
+table {
     margin: 20px auto;
     border-collapse: collapse;
     width: 80%;
@@ -54,24 +53,24 @@ body{
     animation: fadeInUp 0.8s ease-in-out;
     background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
     border-radius: 8px;
-  }
-  
-  th, td {
+}
+
+th, td {
     border: 1px solid #c40909;
     padding: 15px;
     text-align: center;
-  }
-  
-  .table-row {
+}
+
+.table-row {
     transition: background-color 0.3s ease, transform 0.2s;
-  }
-  
-  .table-row:hover {
+}
+
+.table-row:hover {
     background-color: #e59595;
     transform: scale(1.02);
-  }
-  
-  .remove-button {
+}
+
+.remove-button {
     background-color: #f44336;
     color: white;
     border: none;
@@ -79,44 +78,72 @@ body{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .remove-button:hover {
+}
+
+.remove-button:hover {
     background-color: #e53935;
     transform: scale(1.05);
-  }
-  
-  @keyframes fadeInUp {
+}
+
+@keyframes fadeInUp {
     from {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  @keyframes bounceIn {
+}
+
+@keyframes bounceIn {
     0% {
-      transform: scale(0.9);
-      opacity: 0;
+        transform: scale(0.9);
+        opacity: 0;
     }
     60% {
-      transform: scale(1.1);
-      opacity: 1;
+        transform: scale(1.1);
+        opacity: 1;
     }
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
-  @keyframes pulse {
+}
+
+@keyframes pulse {
     0%, 100% {
-      transform: scale(1);
+        transform: scale(1);
     }
     50% {
-      transform: scale(1.05);
+        transform: scale(1.05);
     }
-  }
-  
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .display-button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    select {
+        width: 100%;
+        padding: 8px;
+    }
+
+    table {
+        width: 95%;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .remove-button {
+        padding: 6px 10px;
+    }
+}
