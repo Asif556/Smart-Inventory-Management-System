@@ -1,6 +1,6 @@
 
 body{
-    background-image: url(.\\public\\bg-image.png);
+    background-image: url(/bg-image.png);
     background-repeat: no-repeat;
     background-size: cover;
     
