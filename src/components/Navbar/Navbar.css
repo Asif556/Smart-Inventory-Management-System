@@ -11,26 +11,28 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    
     transition: background-color 0.3s;
-    
 }
-.link{
+
+.link {
     transition: all 0.3s;
 }
-.link:hover{
+
+.link:hover {
     cursor: pointer;
 }
+
 .nav.scrolled {
     background-color: white; 
-    
     box-shadow: 5px 2px 2px black;
-    h1{
+}
+
+.nav.scrolled h1 {
     color: rgb(86, 127, 164);
 }
-a{
+
+.nav.scrolled a {
     color: black;
-}
 }
 
 .links {
@@ -66,17 +68,48 @@ a{
 .logo {
     margin-left: 2rem;
     transition: all 0.4s;
-    h1{
-        color: white;
-    }
 }
-.logo:hover{
+
+.logo:hover {
     cursor: pointer;
 }
+
 h1 {
     font-size: 2.8rem;
     color: white;
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
-    
+}
+
+@media (max-width: 768px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem; 
+        left: 0;
+        right: 0;
+        background-color: rgb(84,126,164);
+        z-index: 1;
+    }
+
+    .links.open {
+        display: flex;
+    }
+
+    .nav {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .links a {
+        font-size: 1.1rem;
+    }
 }
