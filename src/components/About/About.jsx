@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className='About' id='about'>
         <div className="first box">
-            <h2>Introducing Pixel.AI: Your Gateway to Infinite Creativity! 📦</h2>
+            <h2>Introducing INVO : Your Smart Solution to Seamless Inventory Management!📦</h2>
             <p>"Ready to transform how you manage your inventory? Say hello to InventoryPro, the cutting-edge solution powered by machine learning for smarter inventory control, freshness checks, and predictive pricing!"</p>
         </div>
         <div className="second box">
